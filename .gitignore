@@ -1,0 +1,42 @@
+# ── Чувствительные / приватные артефакты — НИКОГДА не коммитим ──
+#
+# Этот шаблон НЕ содержит реальных данных команды. Файлы canon/current/features
+# здесь — обезличенные скелеты-образцы (их можно и нужно коммитить).
+#
+# Правила ниже защищают от случайной утечки, КОГДА вы наполните проект реальными
+# данными своей команды. Если ведёте приватный командный форк — оставьте как есть.
+
+# HR / performance: индивидуальные оценки людей, дашборды активности
+people/
+mngmnt/
+
+# Estimate baseline с реальными именами и временами выполнения
+# (методология — canon/estimates/README.md — коммитится; сами данные — нет)
+canon/estimates/*.json
+canon/estimates/snapshot-*.json
+
+# Сгенерированные черновики апдейтов с именами и внутрянкой
+current/status-update-draft-*.md
+current/status-update-final-*.md
+current/notes/
+
+# Снапшоты внешних систем (Asana / Slack) — содержат GID, имена, внутрянку
+backups/
+.tmp/
+**/asana-snapshot*.md
+**/slack-signals*.md
+
+# Внутренние стратегические документы
+company_brain/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
